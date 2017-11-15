@@ -6,6 +6,7 @@ services:
     restart: always
     ports:
       - "8000:8000"
+      - "443:443"
     environment:
       - DATABASE_URL=mysql+pymysql://root:ctfd@db/ctfd
     volumes:
